@@ -12,7 +12,7 @@ set(LIBWEBRTC_ROOT_PATH "/root/workspace/webrtc/webrtc_android/src")
 if(${CMAKE_SYSTEM_NAME} MATCHES "Android")
 
 #    set(LIBWEBRTC_PATH "${LIBWEBRTC_ROOT_PATH}/android")
-    set(LIBWEBRTC_LIB_PATH "${LIBWEBRTC_ROOT_PATH}/out_release/${ANDROID_ABI}/obj/")
+    set(LIBWEBRTC_LIB_PATH "${LIBWEBRTC_PATH}/lib/${ANDROID_ABI}")
 
     include_directories("${LIBWEBRTC_ROOT_PATH}")
     include_directories("${LIBWEBRTC_ROOT_PATH}/third_party/abseil-cpp")
